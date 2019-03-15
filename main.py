@@ -9,13 +9,13 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "dump",
     type=str,
-    help="Kubernetes namespace of the deployment"
+    help="JSON dump from the TLA facts store, one xAPI statement per line"
 )
 
 parser.add_argument(
     "out",
     type=str,
-    help="Kubernetes namespace of the deployment"
+    help="Path of the CSV file which will be written by this script"
 )
 
 args = parser.parse_args()
